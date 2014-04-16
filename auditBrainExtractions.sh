@@ -58,10 +58,16 @@ parentDirLegacy=/data/birc/Florida/R21_AD/
 # specify participant ID from first commandline argument:
 participant=$1
 
-# interactively view native-space legacy images for assessment of legacy brain extraction:
-# 	green: 		whole-head T1
-# 	red: 		legacy best extraction
-# 	blue:		legacy VBM input 
+clear
+echo ""
+echo "Assess legacy brain extraction. Opening fslview with layers:"
+echo ""
+echo "  blue:   legacy VBM input"
+echo "  red:    legacy best extraction"
+echo "  green:  whole-head T1"
+echo ""
+echo "(record notes in google doc 'R21_AD bet options')"
+echo ""
 
 fslview \
 ${parentDirLegacy}/SUBJECTS/canonical/MNI_canonical/R21_${participant}*canonical_t1.nii.gz \
