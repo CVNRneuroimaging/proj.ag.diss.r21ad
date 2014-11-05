@@ -2,6 +2,8 @@
 
 # rsync relevant /data/birc/${site}/${proj}/ subdirectories from the server:
 
+# example:
+# 
 #for dir in 02.fmriTaskProgramming 03.FmriRegressors 04.Grants 05.Scripts 06.acqfiles 08.QC; do 
 #   rsync -r --progress \
 #   stowler@qball3.birc.emory.edu:/data/birc/Atlanta/OMT/${dir} \
@@ -18,3 +20,7 @@ rsync -r --progress \
 stowler@qball3.birc.emory.edu:/data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical/*t1* \
 /data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical
 
+# mkdir -p /data/birc/Atlanta/stowlerWIP/tempData
+rsync -r --progress \
+stowler@qball3.birc.emory.edu:/data/birc/Atlanta/stowlerWIP/tempData/temp-R21_AD_VBM \
+/data/birc/Atlanta/stowlerWIP/tempData
