@@ -11,14 +11,14 @@
 #done
 
 #mkdir -p /data/birc/Florida/R21_AD/VBM/struc/
-rsync -r --progress \
-stowler@qball3.birc.emory.edu:/data/birc/Florida/R21_AD/VBM/struc/* \
-/data/birc/Florida/R21_AD/VBM/struc/
+#rsync -r --progress \
+#stowler@qball3.birc.emory.edu:/data/birc/Florida/R21_AD/VBM/struc/* \
+#/data/birc/Florida/R21_AD/VBM/struc/
 
 # mkdir -p /data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical
-rsync -r --progress \
-stowler@qball3.birc.emory.edu:/data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical/*t1* \
-/data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical
+#rsync -r --progress \
+#stowler@qball3.birc.emory.edu:/data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical/*t1* \
+#/data/birc/Florida/R21_AD/SUBJECTS/canonical/MNI_canonical
 
 # mkdir -p /data/birc/Atlanta/stowlerWIP/tempData
 rsync -r --progress \
